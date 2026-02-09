@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visual Memory Chunk Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Instruction Screen -->
+<div id="instruction" class="screen active">
+  <h1>VISUAL MEMORY CHUNK TEST</h1>
+  <p>You will see grouped squares for 5 seconds.</p>
+  <p>Remember the pattern and select it.</p>
+  <p>Accuracy is important.</p>
+  <button onclick="startRound()">START</button>
+</div>
+
+<!-- Game Screen -->
+<div id="game" class="screen">
+  <h2 id="roundText"></h2>
+  <h3 id="timer"></h3>
+
+  <!-- Time Bar -->
+  <div id="progressBar">
+    <div id="progress"></div>
+  </div>
+
+  <div id="grid"></div>
+
+  <button onclick="submitAnswer()">Submit</button>
+  <p id="msg"></p>
+</div>
+
+<!-- Result Screen -->
+<div id="result" class="screen">
+  <h1>FINAL SCORE</h1>
+  <h2 id="finalScore"></h2>
+  <button onclick="location.reload()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

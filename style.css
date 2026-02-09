@@ -1,0 +1,76 @@
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  text-align:center;
+}
+
+.screen{ display:none; }
+
+.active{
+  display:block;
+  max-width:500px;
+  margin:60px auto;
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(12px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+#grid{
+  width:280px;
+  margin:25px auto;
+  display:grid;
+  grid-template-columns:repeat(4,65px);
+  gap:10px;
+}
+
+.cell{
+  width:65px;
+  height:65px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.15);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.cell:hover{ transform:scale(1.05); }
+
+.show{
+  background:#00ff9c;
+  box-shadow:0 0 15px #00ff9c;
+}
+
+.select{
+  background:#ffb347;
+  box-shadow:0 0 12px #ffb347;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  background:white;
+  color:#333;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+#progressBar{
+  width:80%;
+  height:10px;
+  background:rgba(255,255,255,0.25);
+  margin:10px auto;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+#progress{
+  height:100%;
+  width:100%;
+  background:#00ff9c;
+  transition:width 1s linear;
+}
